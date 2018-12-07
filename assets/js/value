@@ -1,0 +1,597 @@
+ this._addcharacterclass({
+        "leadership": 98,
+        "power": 72,
+        "intellect": 96,
+        "rare": 4,
+        "skill":7,
+        "name": "周瑜",
+        "code":"zhouyu"
+    });
+    this._addcharacterclass({
+        "leadership": 93,
+        "power": 37,
+        "intellect": 100,
+        "rare": 5,
+        "skill":1,
+        "name": "诸葛亮",
+        "code":"zhugeliang"
+    });
+    this._addcharacterclass({
+        "leadership": 97,
+        "power": 63,
+        "intellect": 96,
+        "rare": 4,
+        "skill":8,
+        "name": "司马懿",
+        "code":"simayi"
+    });
+    this._addcharacterclass({
+        "leadership": 97,
+        "power": 100,
+        "intellect": 26,
+        "rare": 5,
+        "skill":0,
+        "name": "吕布",
+        "code":"lvbu"
+    });
+    this._addcharacterclass({
+        "leadership": 96,
+        "power": 97,
+        "intellect": 76,
+        "rare": 4,
+        "skill":3,
+        "name": "关羽",
+        "code":"guanyu"
+    });
+    this._addcharacterclass({
+        "leadership": 90,
+        "power": 98,
+        "intellect": 30,
+        "rare": 4,
+        "skill":4,
+        "name": "张飞",
+        "code":"zhangfei"
+    });
+    this._addcharacterclass({
+        "leadership": 97,
+        "power": 66,
+        "intellect": 95,
+        "rare": 4,
+        "skill":9,
+        "name": "陆逊",
+        "code":"luxun"
+    });
+    this._addcharacterclass({
+        "leadership": 91,
+        "power": 96,
+        "intellect": 75,
+        "rare": 4,
+        "skill":2,
+        "name": "赵云",
+        "code":"zhaoyun"
+    });
+    this._addcharacterclass({
+        "leadership": 93,
+        "power": 97,
+        "intellect": 44,
+        "rare": 4,
+        "skill":6,
+        "name": "马超",
+        "code":"machao"
+    });
+    this._addcharacterclass({
+        "leadership": 90,
+        "power": 93,
+        "intellect": 64,
+        "rare": 4,
+        "skill":5,
+        "name": "黄忠",
+        "code":"huangzhong"
+    });
+    this._addcharacterclass({
+        "leadership": 94,
+        "power": 92,
+        "intellect": 77,
+        "rare": 4,
+        "skill":12,
+        "name": "张辽",
+        "code":"zhangliao"
+    });
+    this._addcharacterclass({
+        "leadership": 93,
+        "power": 81,
+        "intellect": 89,
+        "rare": 3,
+        "name": "吕蒙",
+        "code":"lvmeng"
+    });
+    this._addcharacterclass({
+        "leadership": 91,
+        "power": 89,
+        "intellect": 90,
+        "rare": 3,
+        "name": "姜维",
+        "code":"jiangwei"
+    });
+    this._addcharacterclass({
+        "leadership": 88,
+        "power": 93,
+        "intellect": 75,
+        "rare": 3,
+        "name": "甘宁",
+        "code":"ganning"
+    });
+    this._addcharacterclass({
+        "leadership": 90,
+        "power": 93,
+        "intellect": 69,
+        "rare": 3,
+        "name": "太史慈",
+        "code":"taishici"
+    });
+    this._addcharacterclass({
+        "leadership": 80,
+        "power": 83,
+        "intellect": 70,
+        "rare": 2,
+        "name": "黄盖",
+        "code":"huanggai"
+    });
+    this._addcharacterclass({
+        "leadership": 76,
+        "power": 86,
+        "intellect": 67,
+        "rare": 2,
+        "name": "关兴",
+        "code":"guanxing"
+    });
+    this._addcharacterclass({
+        "leadership": 78,
+        "power": 87,
+        "intellect": 48,
+        "rare": 2,
+        "name": "张苞",
+        "code":"zhangbao"
+    });
+    this._addcharacterclass({
+        "leadership": 92,
+        "power": 88,
+        "intellect": 72,
+        "rare": 3,
+        "name": "张郃",
+        "code":"zhanghe"
+    });
+    this._addcharacterclass({
+        "leadership": 92,
+        "power": 90,
+        "intellect": 63,
+        "rare": 3,
+        "skill":11,
+        "name": "夏侯敦",
+        "code":"xiahoudun"
+    });
+    this._addcharacterclass({
+        "leadership": 90,
+        "power": 91,
+        "intellect": 68,
+        "rare": 3,
+        "skill":10,
+        "name": "夏侯渊",
+        "code":"xiahouyuan"
+    });
+    this._addcharacterclass({
+        "leadership": 80,
+        "power": 84,
+        "intellect": 56,
+        "rare": 2,
+        "name": "乐进",
+        "code":"yuejin"
+    });
+
+    this._addcharacterclass({
+        "leadership": 81,
+        "power": 85,
+        "intellect": 66,
+        "rare": 2,
+        "name": "马岱",
+        "code":"madai"
+    });
+    this._addcharacterclass({
+        "leadership": 20,
+        "power": 26,
+        "intellect": 81,
+        "rare": 5,
+        "skill":16,
+        "name": "貂蝉",
+        "code":"diaochan"
+    });
+    this._addcharacterclass({
+        "leadership": 76,
+        "power": 86,
+        "intellect": 70,
+        "rare": 4,
+        "name": "孙尚香",
+        "code":"sunshangxiang"
+    });
+    this._addcharacterclass({
+        "leadership": 85,
+        "power": 86,
+        "intellect": 60,
+        "rare": 3,
+        "name": "高顺",
+        "code":"gaoshun"
+    });
+
+    this._addcharacterclass({
+        "leadership": 81,
+        "power": 45,
+        "intellect": 98,
+        "rare": 3,
+        "name": "賈诩",
+        "code":"jiaxu"
+    });
+    this._addcharacterclass({
+        "leadership": 89,
+        "power": 89,
+        "intellect": 74,
+        "rare": 3,
+        "name": "徐晃",
+        "code":"xuhuang"
+    });
+    this._addcharacterclass({
+        "leadership": 78,
+        "power": 36,
+        "intellect": 97,
+        "rare": 4,
+        "name": "庞统",
+        "code":"pangtong"
+    });
+    this._addcharacterclass({
+        "leadership": 79,
+        "power": 53,
+        "intellect": 95,
+        "rare": 3,
+        "name": "法正",
+        "code":"fazheng"
+    });
+    this._addcharacterclass({
+        "leadership": 80,
+        "power": 64,
+        "intellect": 94,
+        "rare": 3,
+        "name": "徐庶",
+        "code":"xushu"
+    });
+    this._addcharacterclass({
+        "leadership": 78,
+        "power": 59,
+        "intellect": 94,
+        "rare": 3,
+        "name": "鲁肃",
+        "code":"lusu"
+    });
+    this._addcharacterclass({
+        "leadership": 52,
+        "power": 12,
+        "intellect": 97,
+        "rare": 4,
+        "skill":15,
+        "name": "郭嘉",
+        "code":"guojia"
+    });
+    this._addcharacterclass({
+        "leadership": 48,
+        "power": 14,
+        "intellect": 96,
+        "rare": 4,
+        "name": "荀彧",
+        "code":"xunyu"
+    });
+    this._addcharacterclass({
+        "leadership": 79,
+        "power": 92,
+        "intellect": 32,
+        "rare": 2,
+        "name": "周泰",
+        "code":"zhoutai"
+    });
+    this._addcharacterclass({
+        "leadership": 93,
+        "power": 87,
+        "intellect": 89,
+        "rare": 3,
+        "name": "邓艾",
+        "code":"dengai"
+    });
+    this._addcharacterclass({
+        "leadership": 87,
+        "power": 25,
+        "intellect": 86,
+        "rare": 2,
+        "skill":13,
+        "name": "张角",
+        "code":"zhangjiao"
+    });
+    this._addcharacterclass({
+        "leadership": 79,
+        "power": 93,
+        "intellect": 71,
+        "rare": 3,
+        "name": "庞德",
+        "code":"pangde"
+    });
+    this._addcharacterclass({
+        "leadership": 72,
+        "power": 95,
+        "intellect": 35,
+        "rare": 3,
+        "skill":13,
+        "name": "典韦",
+        "code":"dianwei"
+    });
+    this._addcharacterclass({
+        "leadership": 74,
+        "power": 96,
+        "intellect": 35,
+        "rare": 3,
+        "skill":14,
+        "name": "许褚",
+        "code":"xuchu"
+    });
+    this._addcharacterclass({
+        "leadership": 87,
+        "power": 60,
+        "intellect": 81,
+        "rare": 2,
+        "name": "满宠",
+        "code":"manchong"
+    });
+    this._addcharacterclass({
+        "leadership": 87,
+        "power": 81,
+        "intellect": 772,
+        "rare": 2,
+        "name": "徐盛",
+        "code":"xusheng"
+    });
+    this._addcharacterclass({
+        "leadership": 85,
+        "power": 83,
+        "intellect": 78,
+        "rare": 2,
+        "name": "程普",
+        "code":"chengpu"
+    });
+    this._addcharacterclass({
+        "leadership": 73,
+        "power": 25,
+        "intellect": 94,
+        "rare": 2,
+        "name": "荀攸",
+        "code":"xunyou"
+    });
+    this._addcharacterclass({
+        "leadership": 79,
+        "power": 37,
+        "intellect": 88,
+        "rare": 2,
+        "name": "沮授",
+        "code":"jushou"
+    });
+    this._addcharacterclass({
+        "leadership": 84,
+        "power": 83,
+        "intellect": 80,
+        "rare": 2,
+        "name": "李严",
+        "code":"liyan"
+    });
+    this._addcharacterclass({
+        "leadership": 85,
+        "power": 82,
+        "intellect": 74,
+        "rare": 2,
+        "name": "朱桓",
+        "code":"zhuhuan"
+    });
+    this._addcharacterclass({
+        "leadership": 83,
+        "power": 61,
+        "intellect": 83,
+        "rare": 2,
+        "name": "审配",
+        "code":"shenpei"
+    });
+    this._addcharacterclass({
+        "leadership": 83,
+        "power": 77,
+        "intellect": 78,
+        "rare": 2,
+        "name": "郝昭",
+        "code":"haozhao"
+    });
+    this._addcharacterclass({
+        "leadership": 74,
+        "power": 55,
+        "intellect": 89,
+        "rare": 2,
+        "name": "陈宫",
+        "code":"chengong"
+    });
+    this._addcharacterclass({
+        "leadership": 85,
+        "power": 77,
+        "intellect": 72,
+        "rare": 2,
+        "name": "于禁",
+        "code":"yujin"
+    });
+    this._addcharacterclass({
+        "leadership": 85,
+        "power": 72,
+        "intellect": 75,
+        "rare": 2,
+        "name": "韩遂",
+        "code":"hansui"
+    });
+    this._addcharacterclass({
+        "leadership": 66,
+        "power": 29,
+        "intellect": 93,
+        "rare": 2,
+        "name": "李儒",
+        "code":"liru"
+    });
+    this._addcharacterclass({
+        "leadership": 94,
+        "power": 39,
+        "intellect": 85,
+        "rare": 2,
+        "name": "蒋琬",
+        "code":"liru"
+    });
+    this._addcharacterclass({
+        "leadership": 76,
+        "power": 62,
+        "intellect": 83,
+        "rare": 2,
+        "name": "黄权",
+        "code":"huangquan"
+    });
+    this._addcharacterclass({
+        "leadership": 83,
+        "power": 76,
+        "intellect": 76,
+        "rare": 1,
+        "name": "王平",
+        "code":"wangping"
+    });
+    this._addcharacterclass({
+        "leadership": 73,
+        "power": 29,
+        "intellect": 84,
+        "rare": 1,
+        "name": "费祎",
+        "code":"feiyi"
+    });
+    this._addcharacterclass({
+        "leadership": 77,
+        "power": 77,
+        "intellect": 80,
+        "rare": 1,
+        "name": "李典",
+        "code":"lidian"
+    });
+    this._addcharacterclass({
+        "leadership": 75,
+        "power": 35,
+        "intellect": 81,
+        "rare": 2,
+        "name": "诸葛瑾",
+        "code":"zhugejin"
+    });
+    this._addcharacterclass({
+        "leadership": 79,
+        "power": 64,
+        "intellect": 77,
+        "rare": 1,
+        "name": "蔡瑁",
+        "code":"caimao"
+    });
+    this._addcharacterclass({
+        "leadership": 75,
+        "power": 74,
+        "intellect": 79,
+        "rare": 1,
+        "name": "孟达",
+        "code":"mengda"
+    });
+    this._addcharacterclass({
+        "leadership": 83,
+        "power": 71,
+        "intellect": 71,
+        "rare": 1,
+        "name": "吴懿",
+        "code":"wuyi"
+    });
+    this._addcharacterclass({
+        "leadership": 60,
+        "power": 32,
+        "intellect": 93,
+        "rare": 2,
+        "name": "田丰",
+        "code":"tianfeng"
+    });
+    this._addcharacterclass({
+        "leadership": 64,
+        "power": 65,
+        "intellect": 87,
+        "rare": 2,
+        "name": "马谡",
+        "code":"masu"
+    });
+
+    this._addcharacterclass({
+        "leadership": 49,
+        "power": 33,
+        "intellect": 84,
+        "rare": 1,
+        "name": "蒯越",
+        "code":"kuaiyue"
+    });
+    this._addcharacterclass({
+        "leadership": 51,
+        "power": 50,
+        "intellect": 82,
+        "rare": 1,
+        "name": "郭图",
+        "code":"guotu"
+    });
+    this._addcharacterclass({
+        "leadership": 46,
+        "power": 25,
+        "intellect": 84,
+        "rare": 2,
+        "name": "马良",
+        "code":"maliang"
+    });
+    this._addcharacterclass({
+        "leadership": 39,
+        "power": 23,
+        "intellect": 93,
+        "rare": 2,
+        "name": "刘晔",
+        "code":"liuye"
+    });
+    this._addcharacterclass({
+        "leadership": 36,
+        "power": 24,
+        "intellect": 84,
+        "rare": 1,
+        "name": "许攸",
+        "code":"xuyou"
+    });
+    this._addcharacterclass({
+        "leadership": 35,
+        "power": 9,
+        "intellect": 84,
+        "rare": 2,
+        "name": "张昭",
+        "code":"zhangzhao"
+    });
+    this._addcharacterclass({
+        "leadership": 31,
+        "power": 23,
+        "intellect": 75,
+        "rare": 1,
+        "name": "伊籍",
+        "code":"yiji"
+    });
+    this._addcharacterclass({
+        "leadership": 15,
+        "power": 12,
+        "intellect": 88,
+        "rare": 1,
+        "name": "张松",
+        "code":"zhangsong"
+    });

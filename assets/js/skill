@@ -1,0 +1,145 @@
+this._addskill({
+	"leadership": 5,
+	"power": 5,
+	"intellect": 0,
+	"gold": 30000,
+	"name": "无双",
+	"code":"ZhanDouJN160"
+});
+this._addskill({
+	"leadership": 5,
+	"power": 0,
+	"intellect": 5,
+	"gold": 30000,
+	"name": "奇门遁甲",
+	"code":"ZhanDouJN330"
+});
+this._addskill({
+	"leadership": 3,
+	"power": 3,
+	"intellect": 1,
+	"gold": 15000,
+	"name": "突击",
+	"code":"ZhanDouJN130"
+});
+this._addskill({
+	"leadership": 1,
+	"power": 3,
+	"intellect": 3,
+	"gold": 15000,
+	"name": "拖刀计",
+	"code":"ZhanDouJN90"
+});
+this._addskill({
+	"leadership": 3,
+	"power": 4,
+	"intellect": 0,
+	"gold": 15000,
+	"name": "大喝",
+	"code":"ZhanDouJN150"
+});
+this._addskill({
+	"leadership": 0,
+	"power": 4,
+	"intellect": 0,
+	"gold": 12000,
+	"name": "百步穿杨",
+	"code":"ZhanDouJN450"
+});
+this._addskill({
+	"leadership": 2,
+	"power": 3,
+	"intellect": 0,
+	"gold": 15000,
+	"name": "西凉铁骑",
+	"code":"ZhanDouJN60"
+});
+this._addskill({
+	"leadership": 3,
+	"power": 1,
+	"intellect": 3,
+	"gold": 15000,
+	"name": "驱虎吞狼",
+	"code":"ZhanDouJN440"
+});
+this._addskill({
+	"leadership": 5,
+	"power": 0,
+	"intellect": 2,
+	"gold": 15000,
+	"name": "鼓舞",
+	"code":"ZhanDouJN230"
+});
+this._addskill({
+	"leadership": 3,
+	"power": 1,
+	"intellect": 3,
+	"gold": 15000,
+	"name": "火烧连营",
+	"code":"ZhanDouJN310"
+});
+this._addskill({
+	"leadership": 1,
+	"power": 3,
+	"intellect": 0,
+	"gold": 15000,
+	"name": "箭雨",
+	"code":"ZhanDouJN20"
+});
+this._addskill({
+	"leadership": 1,
+	"power": 3,
+	"intellect": 0,
+	"gold": 15000,
+	"name": "肉搏",
+	"code":"ZhanDouJN140"
+});
+this._addskill({
+	"leadership": 1,
+	"power": 3,
+	"intellect": 1,
+	"gold": 15000,
+	"name": "奇袭",
+	"code":"ZhanDouJN50"
+});
+this._addskill({
+	"leadership": 3,
+	"power": 0,
+	"intellect": 3,
+	"gold": 15000,
+	"name": "妖术",
+	"code":"prop300"
+});
+this._addskill({
+	"leadership": 0,
+	"power": 4,
+	"intellect": 0,
+	"gold": 15000,
+	"name": "破甲",
+	"code":"ZhanDouJN10"
+});
+this._addskill({
+	"leadership": 0,
+	"power": 4,
+	"intellect": 0,
+	"gold": 15000,
+	"name": "狂暴",
+	"code":"ZhanDouJN170"
+});
+this._addskill({
+	"leadership": 0,
+	"power": 4,
+	"intellect": 0,
+	"gold": 15000,
+	"name": "埋伏",
+	"code":"ZhanDouJN40"
+});
+this._addskill({
+	"leadership": 3,
+	"power": 0,
+	"intellect": 3,
+	"gold": 15000,
+	"name": "美人计",
+	"code":"ZhanDouJN220"
+});
+

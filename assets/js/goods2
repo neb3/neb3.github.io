@@ -1,0 +1,369 @@
+this._addgoodclass({
+    "leadership": 0,
+    "power": 1,
+    "intellect": 0,
+    "type": 1,
+    "name": "铁戟",
+    "gold": 3000,
+    "code":"goods8"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 2,
+    "intellect": 0,
+    "type": 1,
+    "name": "眉尖刀",
+    "gold": 5000,
+    "code":"goods3"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 3,
+    "intellect": 0,
+    "type": 1,
+    "name": "雌雄双剑",
+    "gold": 7000,
+    "code":"goods4"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 2,
+    "intellect": 0,
+    "type": 1,
+    "name": "凤嘴刀",
+    "gold": 4000,
+    "code":"goods5"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 2,
+    "intellect": 0,
+    "type": 1,
+    "name": "檀弓",
+    "gold": 4000,
+    "code":"goods6"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 2,
+    "intellect": 0,
+    "type": 1,
+    "name": "铜锤",
+    "gold": 4000,
+    "code":"goods9"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 2,
+    "intellect": 0,
+    "type": 1,
+    "name": "大斧",
+    "gold": 4000,
+    "code":"goods11"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 3,
+    "type": 1,
+    "name": "羽扇",
+    "gold": 5000,
+    "code":"goods7"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 4,
+    "intellect": 0,
+    "type": 1,
+    "name": "银枪",
+    "gold": 8000,
+    "code":"goods12"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 5,
+    "intellect": 0,
+    "type": 1,
+    "name": "七星宝刀",
+    "gold": 10000,
+    "code":"goods2"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 5,
+    "intellect": 0,
+    "type": 1,
+    "name": "倚天剑",
+    "gold": 10000,
+    "code":"goods1"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 5,
+    "intellect": 0,
+    "type": 1,
+    "name": "青虹剑",
+    "gold": 10000,
+    "code":"goods10"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 7,
+    "intellect": 0,
+    "type": 1,
+    "name": "蛇矛",
+    "gold": 15000,
+    "code":"goods13"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 7,
+    "intellect": 0,
+    "type": 1,
+    "name": "偃月刀",
+    "gold": 15000,
+    "code":"goods14"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 8,
+    "intellect": 0,
+    "type": 1,
+    "name": "方天画戟",
+    "gold": 15000,
+    "code":"goods15"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 2,
+    "type": 2,
+    "name": "孟德新书",
+    "gold": 4000,
+    "code":"goods102"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 4,
+    "type": 2,
+    "name": "墨子",
+    "gold": 7000,
+    "code":"goods101"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 3,
+    "type": 2,
+    "name": "汉书",
+    "gold": 5000,
+    "code":"goods103"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 4,
+    "type": 2,
+    "name": "礼记",
+    "gold": 8000,
+    "code":"goods104"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 5,
+    "type": 2,
+    "name": "史记",
+    "gold": 10000,
+    "code":"goods105"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 5,
+    "type": 2,
+    "name": "六韬",
+    "gold": 10000,
+    "code":"goods106"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 4,
+    "type": 2,
+    "name": "左传",
+    "gold": 8000,
+    "code":"goods107"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 3,
+    "type": 2,
+    "name": "吴越春秋",
+    "gold": 5000,
+    "code":"goods108"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 5,
+    "type": 2,
+    "name": "战国策",
+    "gold": 10000,
+    "code":"goods109"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 4,
+    "type": 2,
+    "name": "春秋左氏传",
+    "gold": 8000,
+    "code":"goods110"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 5,
+    "type": 2,
+    "name": "孙膑兵法",
+    "gold": 10000,
+    "code":"goods111"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 4,
+    "type": 2,
+    "name": "山海经",
+    "gold": 8000,
+    "code":"goods112"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 7,
+    "type": 2,
+    "name": "遁甲天书",
+    "gold": 15000,
+    "code":"goods113"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 7,
+    "type": 2,
+    "name": "太平清领道",
+    "gold": 15000,
+    "code":"goods115"
+});
+this._addgoodclass({
+    "leadership": 0,
+    "power": 0,
+    "intellect": 8,
+    "type": 2,
+    "name": "太平要术",
+    "gold": 20000,
+    "code":"goods114"
+});
+this._addgoodclass({
+    "leadership": 1,
+    "power": 0,
+    "intellect": 0,
+    "type": 3,
+    "name": "乌丸马",
+    "gold": 3000,
+    "code":"goods201"
+});
+this._addgoodclass({
+    "leadership": 1,
+    "power": 0,
+    "intellect": 0,
+    "type": 3,
+    "name": "凉州马",
+    "gold": 3000,
+    "code":"goods204"
+});
+this._addgoodclass({
+    "leadership": 2,
+    "power": 0,
+    "intellect": 0,
+    "type": 3,
+    "name": "白马",
+    "gold": 4000,
+    "code":"goods207"
+});
+this._addgoodclass({
+    "leadership": 2,
+    "power": 0,
+    "intellect": 0,
+    "type": 3,
+    "name": "果下马",
+    "gold": 4000,
+    "code":"goods212"
+});
+this._addgoodclass({
+    "leadership": 2,
+    "power": 0,
+    "intellect": 0,
+    "type": 3,
+    "name": "大宛马",
+    "gold": 4000,
+    "code":"goods202"
+});
+this._addgoodclass({
+    "leadership": 3,
+    "power": 0,
+    "intellect": 0,
+    "type": 3,
+    "name": "白龙",
+    "gold": 5000,
+    "code":"goods203"
+});
+this._addgoodclass({
+    "leadership": 5,
+    "power": 0,
+    "intellect": 0,
+    "type": 3,
+    "name": "绝影",
+    "gold": 10000,
+    "code":"goods209"
+});
+this._addgoodclass({
+    "leadership": 5,
+    "power": 0,
+    "intellect": 0,
+    "type": 3,
+    "name": "爪黄飞电",
+    "gold": 10000,
+    "code":"goods206"
+});
+this._addgoodclass({
+    "leadership": 7,
+    "power": 0,
+    "intellect": 0,
+    "type": 3,
+    "name": "的卢",
+    "gold": 15000,
+    "code":"goods211"
+});
+this._addgoodclass({
+    "leadership": 8,
+    "power": 0,
+    "intellect": 0,
+    "type": 3,
+    "name": "赤兔",
+    "gold": 20000,
+    "code":"goods215"
+});
+
+
+
+
+
+
+
+
+

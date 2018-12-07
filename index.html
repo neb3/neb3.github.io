@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>星云三国</title>
+        <!-- Bootstrap core CSS -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/site.css" rel="stylesheet">
+    <link href="assets/toastr/toastr.min.css" rel="stylesheet"/>
+
+<style>
+</style>
+
+</head>
+<body>
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+      <input type="hidden" id="txtWalletAddress" />
+      <header class="masthead mb-auto">
+        
+        <div class="inner">
+          <nav class="nav">
+            <a class="nav-link" href="#" id="selectWorldMap"><img class="menubutton" src="assets/img/cityout.png" /></a>
+            <a class="nav-link" href="#" id="selectInnerCity"><img class="menubutton" src="assets/img/cityin.png" /></a>
+            <a class="nav-link" href="#" id="getLogs"><img class="menubutton" src="assets/img/mail1.png" /></a>
+            <a class="nav-link" href="#" id="getRanks"><img class="menubutton" src="assets/img/worldBt1.png" /></a>
+            <a class="nav-link" href="#" id="getClasses"><img class="menubutton" src="assets/img/character.png" /></a>
+            <a class="nav-link" href="https://medium.com/@appbery.digital/%E6%98%9F%E4%BA%91%E4%B8%89%E5%9B%BD-738237bb277a" target="_blank"><img class="menubutton" src="assets/img/helpBt0.png" /></a>
+          </nav>
+          
+        </div>
+      </header>
+      <input type="hidden" id="txtWalletAddress" />
+      <input type="checkbox" id="cbInitCity" style='display:none;' />
+      <main role="main" class="inner cover">
+         <div class="container-full">
+            <div class="row">
+               <div class="col-md-12">
+
+            <canvas id="canvas">
+            </canvas>
+          </div>
+          </div>
+        </div>
+
+      <!--   <img src="assets/img/map.png" id="imgMap"> -->
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <div class='row'>
+            <div class='col-md-6'><small>
+            
+             您需要下载并安装<a href="https://github.com/nebulasio/WebExtensionWallet" target="_blank">星云chrome插件</a>.详细安装教程请查阅链接.</small>
+            
+          </div>
+          </div>
+          <p>&copy 2018 星云三国 | appbery.digital@gmail.com</p>
+        </div>
+      </footer>
+    </div>
+</div>
+
+<div class="modal" id="viewOtherCityModal" tabindex="-2" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-frame">
+          <div class="modal-header border-0">
+            <h5 class="modal-title lblStar"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <div class="card bg-transparent">
+                  <div class="card-body bg-transparent">
+                    <input type='hidden' id='txtOtherCityAddress' />
+                   
+                    <h5 class="card-header"><span id='lblOtherCityName'></span>
+
+                      <span id="spanOtherCityFlag"></span> <small><span id="lblProtectionLabel" class='text-warning'></span></small>
+                    </h5>
+
+                    <div class="card-body cityguards-placeholder">
+
+                    </div>
+                   
+                     
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+                  <img class="btn-action border-0" src="assets/img/cancelBt1.png" data-dismiss="modal"  />
+                  <img id="attackCity" class="btn-action border-0 btn-search" src="assets/img/expeditionBt1.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="modal" id="viewHarvestModal" tabindex="-2" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-frame">
+          <div class="modal-header border-0">
+            <h5 class="modal-title lblStar"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <div class="card bg-transparent">
+                  <div class="card-body bg-transparent">
+                    
+                    <h5 class="card-header text-info">征收黄金和粮食
+                    </h5>
+                    <div class="card-body harvest-placeholder">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+                  <img class="btn-action border-0" src="assets/img/cancelBt1.png" data-dismiss="modal"  />
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="modal" id="viewLogsModal" tabindex="-3" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-noframe">
+          <div class="modal-header border-0">
+            <h5 class="modal-title lblStar"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                  <h5 class="card-header text-info">报告</h5>
+                <div class="card bg-transparent">
+                  <div class="card-body bg-transparent logs-placeholder">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+           <img class="btn-action border-0" src="assets/img/cancelBt1.png" data-dismiss="modal" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="modal" id="viewLeaderboardModal" tabindex="-3" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-frame">
+          <div class="modal-header border-0">
+            <h5 class="modal-title lblStar"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                  <h5 class="card-header text-info">天下大势</h5>
+                <div class="card bg-transparent">
+                  <div class="card-body bg-transparent leaderboard-placeholder">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+           <img class="btn-action border-0" src="assets/img/cancelBt1.png" data-dismiss="modal" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="modal" id="viewGoodClassesModal" tabindex="-3" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-noframe">
+          <div class="modal-header border-0">
+            <h5 class="modal-title lblStar"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                  <h5 class="card-header text-info">宝物</h5>
+                <div class="card bg-transparent">
+                  <div class="card-body bg-transparent goodclasses-placeholder">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+           <img class="btn-action border-0" src="assets/img/cancelBt1.png" data-dismiss="modal" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="modal" id="viewClassModal" tabindex="-3" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-noframe">
+          <div class="modal-header border-0">
+            <h5 class="modal-title lblStar"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                  <h5 class="card-header text-info">武将录</h5>
+                <div class="card bg-transparent">
+                  <div class="card-body bg-transparent characterclasses-placeholder">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+           <img class="btn-action border-0" src="assets/img/cancelBt1.png" data-dismiss="modal" />
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="modal" id="initCityModal" tabindex="-2" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-frame">
+          <div class="modal-header border-0">
+            <h5 class="modal-title lblStar"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <div class="card bg-transparent">
+                  <div class="card-body bg-transparent">
+                    <input type='hidden' id='txtInitX' />
+                    <input type='hidden' id='txtInitY' />
+                    <input type='hidden' id='txtInitFaction' />
+                    <div class="form-group col-md-12">
+                    <label class='text-dark'>主公城市的位置 <span id='lblXY'></span></label>
+                    </div>
+                    <div class="form-group col-md-12">
+                    <label class='text-dark' for="txtPetName">主公的名称</label>
+                      <input type="text" class="form-control" id="txtCityName"></input>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label class='text-dark' for="txtPetName">选择势力</label>
+                          <img class="faction-flag m-2" data-id='1' src="assets/img/Countrywar_FLag_Wei.png" />
+                        
+                       
+                          <img class="faction-flag m-2" data-id='2' src="assets/img/Countrywar_FLag_Shu.png" />
+                       
+                       
+                          <img class="faction-flag m-2" data-id='3' src="assets/img/Countrywar_FLag_Wu.png" />
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+                  <img class="btn-action border-0 btn-initcity" src="assets/img/Bt_Sure0.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="modal" id="viewInnModal" tabindex="-2" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-frame">
+          <div class="modal-header border-0">
+            <h5 class="modal-title lblStar"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <div class="card bg-transparent">
+                  <h5 class="card-header">客栈</h5>
+                  <div class="card-body bg-transparent">可以花费少许资金<strong><span class="text-info">0.01 NAS</span></strong>，有很大几率招募到武将
+                   
+                     <img id="searchCharacter" class="btn-action border-0 btn-search" src="assets/img/recruitBt1.png" />
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+            <img class="btn-action border-0" src="assets/img/cancelBt1.png" data-dismiss="modal" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="modal" id="viewCharacters" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-noframe">
+          <div class="modal-header border-0">
+            <h5 class="modal-title lblStar"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <div class="card bg-transparent">
+                  <h5 class="card-header text-info">武将 <span class="text-white"><small>点击查看</small></span></h5>
+                  <input type='hidden' id='txtSelectedCharacter'/>
+                  <div class="card-body bg-transparent characterdetails-placeholder">
+                  </div>
+                  <div class="card-body bg-transparent goods-placeholder">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+            <img class="btn-action border-0" src="assets/img/cancelBt1.png" data-dismiss="modal" />
+            <img class="btn-action border-0 btn-updatecharacter" src="assets/img/Bt_Sure0.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="modal" id="viewOfficeModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-noframe">
+          <div class="modal-header border-0">
+            <h5 class="modal-title lblStar"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <div class="card bg-transparent">
+                  <h5 class="card-header text-info">战斗部队 <span class='text-white'><small>最多六名武将 - 负责攻击敌城及守卫本城</small></span></h5>
+                  <div class="card-body mb-3 bg-transparent guards-placeholder">
+                  </div>
+
+                  <h5 class="card-header text-info">全体武将 <span class='text-white'><small>选择并且更新部队</small></h5>
+                  <input type='hidden' id='txtSelectedGuards'/>
+                  <div class="card-body bg-transparent characters-placeholder">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+            <img class="btn-action border-0" src="assets/img/cancelBt1.png" data-dismiss="modal" />
+            <img class="btn-action border-0 btn-updateguards" src="assets/img/Bt_Sure0.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <script src="assets/jquery-3.3.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="assets/popper.min.js"></script>
+    <script src="assets/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="assets/holder.min.js"></script>
+    <script src="assets/toastr/toastr.min.js"></script>
+    <script src="assets/nebPay.js"></script>
+    <script src="assets/nebulas.js"></script>
+    <script src="assets/js/main.js?ts=2.0"></script>
+    <script src="assets/js/canvas.js?ts=2.0"></script>
+    <script src="assets/js/fabric.min.js"></script>
+    <script>
+
+        initEnv();
+        initOutCity();
+    </script>
+
+</body>
